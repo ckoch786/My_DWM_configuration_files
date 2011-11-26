@@ -19,8 +19,8 @@ static const char *tags[] = { "Main", "Web", "Workspace", "More" };
 static const Rule rules[] = {
 	/* class            instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",           NULL,       NULL,       0,            True,        -1 },
-	{ "Firefox",        NULL,       NULL,       1 << 2,       False,       -1 },
-        { "google-chrome",  NULL,       NULL,       1 << 2,       False,       -1 },
+	{ "Firefox",        NULL,       NULL,       2,            False,       -1 },
+        { "google-chrome",  NULL,       NULL,       1 ,           False,       -1 },
 };
 
 /* layout(s) */
@@ -48,7 +48,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "uxterm", NULL };
+static const char *termcmd[]  = { "terminator", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
